@@ -1,0 +1,24 @@
+{
+  "name": "C3PO",
+  "version": "0.0.0",
+  "description": "Protocol droid that monitors group.me to provide the appropriate protocol documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Resellers/C3PO.git"
+  },
+  "keywords": [
+    "bot",
+    "protocol",
+    "group.me"
+  ],
+  "author": "GoDaddy Reseller Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Resellers/C3PO/issues"
+  },
+  "homepage": "https://github.com/Resellers/C3PO"
+}
