@@ -1,9 +1,10 @@
 {
   "name": "C3PO",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Protocol droid that monitors group.me to provide the appropriate protocol documentation",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "start": "nodemon lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,10 @@
   "homepage": "https://github.com/Resellers/C3PO",
   "dependencies": {
     "coffee-script": "~1.7.1",
-    "watch": "~0.9.0"
+    "watch": "~0.9.0",
+    "express": "~3.4.8",
+    "underscore": "~1.5.2",
+    "nodemon": "~1.0.14",
+    "request": "~2.33.0"
   }
 }
