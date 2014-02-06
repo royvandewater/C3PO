@@ -2,7 +2,7 @@
   "name": "C3PO",
   "version": "0.0.0",
   "description": "Protocol droid that monitors group.me to provide the appropriate protocol documentation",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Resellers/C3PO/issues"
   },
-  "homepage": "https://github.com/Resellers/C3PO"
+  "homepage": "https://github.com/Resellers/C3PO",
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "watch": "~0.9.0"
+  }
 }
