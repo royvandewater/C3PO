@@ -19,6 +19,7 @@ triggers =
   ':perfectiongame:'    : 'http://liveingreatness.com/core-protocols/perfection-game/'
   ':personalalignment:' : 'http://liveingreatness.com/core-protocols/personal-alignment/'
   ':investigate:'       : 'http://liveingreatness.com/core-protocols/investigate/'
+  ':help:'              : 'I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:'
 
 exports.create = (req, resp) ->
   _.each triggers, (answer, question) =>
