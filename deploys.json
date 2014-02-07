@@ -1,0 +1,10 @@
+{
+    "deploys": [{
+        "name": "Production",
+        "type": "github",
+        "repo": "https://github.com/Resellers/C3PO.git",
+        "basepath": "/home/deploy/apps/C3PO",
+        "command": "git pull",
+        "branch": "master"
+    }]
+}
