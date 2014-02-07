@@ -22,12 +22,13 @@ triggers =
   ':help:'              : 'I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:'
 
 exports.create = (req, resp) ->
-  _.each triggers, (answer, question) =>
-    if req.body.text.match question
 
-      request.post 'https://api.groupme.com/v3/bots/post', json:
-        bot_id: bots[req.body.group_id]
-        text: answer
+  unless req.body.name == 'C3PO'
+    _.each triggers, (answer, question) =>
+      if req.body.text.match question
+        request.post 'https://api.groupme.com/v3/bots/post', json:
+          bot_id: bots[req.body.group_id]
+          text: answer
 
   resp.send null, 204
 
