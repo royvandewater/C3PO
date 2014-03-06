@@ -4,8 +4,8 @@
   "description": "Protocol droid that monitors group.me to provide the appropriate protocol documentation",
   "main": "lib/index.js",
   "scripts": {
-    "start": "nodemon lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cake dev",
+    "test": "mocha --compilers coffee:coffee-script/register --require coffee-script --require test/test_helper.coffee --growl"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
     "underscore": "~1.5.2",
     "nodemon": "~1.0.14",
     "request": "~2.33.0"
+  },
+  "devDependencies": {
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1"
   }
 }
