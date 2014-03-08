@@ -8,5 +8,5 @@ task 'dev', 'rebuild the project', (options) ->
 
   runTests = => spawn 'npm', ['test'], stdio: 'inherit'
 
-  watchTree 'lib', runTests
+  watchTree 'src', runTests
   watchTree 'test', runTests
