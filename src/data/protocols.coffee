@@ -11,4 +11,4 @@ module.exports =
   ':personalalignment:' : 'http://liveingreatness.com/core-protocols/personal-alignment/'
   ':investigate:'       : 'http://liveingreatness.com/core-protocols/investigate/'
   ':core:'              : 'http://liveingreatness.com/core-protocols/the-core-commitments/'
-  ':help:'              : 'I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:'
+  ':help:'              : "I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:. Try :j: if you're feeling saucy"
