@@ -17,7 +17,7 @@ describe 'Bot', ->
           expect(@bot.post).to.have.been.calledWith 'https://api.groupme.com/v3/bots/post',
             json:
               bot_id: 'a979eb3541834d6da88d1b2f58'
-              text:   'I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:'
+              text:   "I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:. Try :j: if you're feeling saucy"
 
       describe 'when called with a message including the phrase ":j:"', ->
         it 'should call post', ->
