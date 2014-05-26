@@ -4,7 +4,7 @@
   "description": "Protocol droid that monitors group.me to provide the appropriate protocol documentation",
   "main": "lib/index.js",
   "scripts": {
-    "start": "cake dev",
+    "start": "coffee src/application.coffee",
     "test": "cake test"
   },
   "repository": {
@@ -24,21 +24,18 @@
   "homepage": "https://github.com/Resellers/C3PO",
   "dependencies": {
     "coffee-script": "~1.7.1",
-    "watch": "~0.10.0",
     "express": "~4.3.1",
     "underscore": "~1.6.0",
-    "nodemon": "~1.0.20",
     "request": "~2.36.0",
-    "chai": "~1.9.1",
-    "mocha": "~1.19.0",
-    "sinon": "~1.10.0",
     "errorhandler": "~1.0.1",
     "morgan": "~1.1.1",
     "body-parser": "~1.2.0"
   },
   "devDependencies": {
+    "watch": "~0.10.0",
     "chai": "~1.9.1",
     "mocha": "~1.19.0",
+    "nodemon": "~1.0.20",
     "sinon": "~1.10.0",
     "sinon-chai": "~2.5.0"
   }
