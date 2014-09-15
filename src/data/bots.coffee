@@ -5,3 +5,4 @@ module.exports =
   '5918963' : '0f2c30caf85c8451660c4afc55' # Integrum Family
   '7492852' : '392c7726a7ca4000d824e8b56c' # C3PO Test
   '8765809' : '71aa6be6fd2133f678fb301ad9' # Booted Family
+  '9117277' : 'ff30b6af9b96eb88ff7dc3fd58' # Octoblu
