@@ -17,6 +17,7 @@ app.use errorhandler() if 'development' == app.get('env')
 
 app.post '/', messages.create
 
-server = app.listen 3002, ->
+port = process.env.PORT ? 3002
+server = app.listen port, ->
   console.log "Express server listening on port #{server.address().port}"
 
