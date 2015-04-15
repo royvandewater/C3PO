@@ -5,6 +5,3 @@ exports.create = (request, response) ->
     bot = new Bot request.body
     bot.react request.body.text
   response.send null, 204
-
-
-

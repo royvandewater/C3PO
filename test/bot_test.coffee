@@ -17,13 +17,7 @@ describe 'Bot', ->
           expect(@bot.post).to.have.been.calledWith 'https://api.groupme.com/v3/bots/post',
             json:
               bot_id: 'a979eb3541834d6da88d1b2f58'
-              text:   "I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:. Try :j: if you're feeling saucy"
-
-      describe 'when called with a message including the phrase ":j:"', ->
-        it 'should call post', ->
-          @bot.send_random_juddism = sinon.stub @bot, 'send_random_juddism'
-          @bot.react ':j:'
-          expect(@bot.send_random_juddism).to.have.been.calledOnce
+              text:   "I respond to these options :pass:, :checkin:, :askforhelp:, :protocolcheck:, :intentioncheck:, :decider:, :resolution:, :perfectiongame:, :personalalignment:, :investigate:, :core:."
 
       describe 'when called with a message including the phrase ":askforhelp:"', ->
         it 'should call post', ->
@@ -55,4 +49,3 @@ describe 'Bot', ->
       it 'should resolve the correct bot_id', ->
         @bot.react ':help:'
         expect(@bot.post.firstCall.args[1].json.bot_id).to.equal 'c4a5adca1f9fe104c15f431623'
-
